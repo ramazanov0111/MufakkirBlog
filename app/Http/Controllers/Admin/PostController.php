@@ -43,9 +43,10 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        $path = $request->file('image')->store('posts');
+        $path = $request->file('image')->store('posts', 'public');
         $params = $request->all();
         $params['image'] = $path;
+//        dd($path);
         $post = Post::create($params);
 
         //Categories

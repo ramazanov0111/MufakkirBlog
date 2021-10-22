@@ -8,6 +8,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>@yield('title')</title>
+    <title>{{ config('app.name', 'Mufakkir') }}</title>
     <meta name="keywords" content="@yield('meta_keyword')">
     <meta name="description" content="@yield('meta_description')">
 
@@ -30,7 +31,7 @@
     <div id="app">
 
         @include('layouts.head_container')
-        
+
         @include('layouts.header')
 
         <main class="container py-4">

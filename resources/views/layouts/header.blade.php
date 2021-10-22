@@ -6,8 +6,56 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <!-- Left Side Of Navbar -->
-            <ul class="navbar-nav mr-auto">
-                @include('layouts.top_menu', ['categories' => $categories])
+            <ul class="topmenu">
+                <li>
+                    <a href="{{url("/")}}">Начинающим</a>
+                </li>
+                <li>
+                    <a href="">Статьи<span class="fa fa-angle-down"></span></a>
+                    <ul class="submenu">
+                        @include('layouts.top_menu', ['categories' => $categories])
+                    </ul>
+                </li>
+                <li>
+                    <a href="">Библиотека<span class="fa fa-angle-down"></span></a>
+                    <ul class="submenu">
+                        <li>
+                            <a href="{{ route('books', "arabic") }}">
+                                На арабском
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ route('books', "russian") }}">
+                                На русском
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ route('books', "child") }}">
+                                Для детей
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">Видеолекции<span class="fa fa-angle-down"></span></a>
+                    <ul class="submenu">
+                        <li><a href="">Акыда</a></li>
+                        <li><a href="">Фикх</a></li>
+                        <li><a href="">История</a></li>
+                        <li><a href="">Хадис</a></li>
+                        <li><a href="">Адаб</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">Аудиоуроки<span class="fa fa-angle-down"></span></a>
+                    <ul class="submenu">
+                        <li><a href="">Акыда</a></li>
+                        <li><a href="">Фикх</a></li>
+                        <li><a href="">История</a></li>
+                        <li><a href="">Хадис</a></li>
+                        <li><a href="">Адаб</a></li>
+                    </ul>
+                </li>
             </ul>
 
             <!-- Right Side Of Navbar -->

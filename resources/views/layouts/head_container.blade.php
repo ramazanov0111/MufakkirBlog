@@ -7,10 +7,12 @@
                 </a>
             </ul>
             <ul class="navbar-nav ml-auto">
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Введите ключевое слово">
-                    <button class="btn btn-dark" type="submit">Поиск</button>
-                </form>
+                <div class="box">
+                    <div class="container-1">
+                        <span class="icon"><i class="fa fa-search"></i></span>
+                        <input type="search" id="search" placeholder="Search..." />
+                    </div>
+                </div>
             </ul>
         </div>
     </div>

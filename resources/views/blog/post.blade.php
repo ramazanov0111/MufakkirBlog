@@ -6,16 +6,13 @@
 
 @section('content')
 
-    <div class="col-md-8">
+    <div class="">
         <h1>{{ $post->title }}</h1>
         <span>{{$post->description}}</span>
-        <p>&nbsp;</p>
-        {{ asset('css/$post->image') }}
-        <img src="{{ $post->image }}">
+        <img src="{{ asset("/storage/".$post->image) }}">
         <p>
             {!! $post->body !!}
         </p>
     </div>
-
 
 @endsection

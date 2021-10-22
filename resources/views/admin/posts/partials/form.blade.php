@@ -29,21 +29,21 @@
 <textarea class="form-control" id="body" name="body">{{$post->body ?? '' }}</textarea>
 
 <label class="btn btn-default btn-file">Изображение</label>
-<input type="file" class="form-control" id="image" name="image" value="{{ $post->image ?? ''}}" required="">
+<input type="file" class="form-control" id="image" name="image" value="{{$post->image ?? ''}}">
 
 <hr/>
 
 <label for="">Мета заголовок</label>
 <input type="text" class="form-control" name="meta_title" placeholder="Мета заголовок"
-       value="{{ $post->meta_title ?? ''}}" required="">
+       value="{{ $post->meta_title ?? ''}}">
 
 <label for="">Мета описание</label>
 <input type="text" class="form-control" name="meta_description" placeholder="Мета описание"
-       value="{{ $post->meta_description ?? ''}}" required="">
+       value="{{ $post->meta_description ?? ''}}">
 
 <label for="">Ключевые слова</label>
 <input type="text" class="form-control" name="meta_keyword" placeholder="Ключевые слова, через запятую"
-       value="{{ $post->meta_keyword ?? ''}}" required="">
+       value="{{ $post->meta_keyword ?? ''}}">
 
 <hr/>
 

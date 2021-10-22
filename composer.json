@@ -12,7 +12,8 @@
         "laravel/framework": "^8.40",
         "laravel/tinker": "^2.5",
         "laravel/ui": "^3.3",
-        "techguy/laravel-ckeditor": "^1.4"
+        "techguy/laravel-ckeditor": "^1.4",
+      "ext-pdo": "*"
     },
     "require-dev": {
         "facade/ignition": "^2.5",

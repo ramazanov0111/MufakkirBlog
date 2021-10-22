@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('title', "Mufakkir")
+
 @section('content')
 
     @include('layouts.carousel')

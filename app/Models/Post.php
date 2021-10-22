@@ -8,6 +8,8 @@ use Illuminate\Support\Str;
 
 class Post extends Model
 {
+    use HasFactory;
+
     // Mass assigned
     protected $fillable = ['title', 'slug', 'description', 'body', 'image', 'image_show', 'meta_title',
         'meta_description', 'meta_keyword', 'published', 'created_by', 'modified_by'];

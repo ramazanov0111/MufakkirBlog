@@ -47,6 +47,7 @@
                         <ul class="dropdown-menu" role="menu">
                             <li><a style="color: #343a40;" class="nav-link" href="{{route('admin.category.index')}}">Категории</a></li>
                             <li><a style="color: #343a40;" class="nav-link" href="{{route('admin.post.index')}}">Статьи</a></li>
+                            <li><a style="color: #343a40;" class="nav-link" href="{{route('admin.book.index')}}">Книги</a></li>
                         </ul>
                     </li>
                 </ul>
